@@ -1,0 +1,14 @@
+<script>
+var n = parseInt(prompt("Digite um numero inteiro:"));
+var t = 0, p;
+for(i = 0; i <= n; i++){
+    p = i%2;
+    if(p == 0){
+        document.write(i);
+        t += i;
+    }else{
+        document.write(" + ");
+    }
+}
+document.write(" = " + t);
+</script>

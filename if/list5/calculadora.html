@@ -1,0 +1,30 @@
+<script>
+   var num2 = 0, num1 = parseFloat(prompt("Número 1: "))
+   var i = 0, operacao, resultado = 0;
+    while(i == 0){
+        operacao = prompt("+ para Soma\n- para Subtração\n * para Multiplicação\n/ para Divisão")
+        if(operacao == "+"){
+            num2 = parseFloat(prompt("Número 2: "))
+            resultado = num1 + num2
+            document.write("Resultado da soma: "+ resultado)
+            i++
+        }else if(operacao == "-"){
+            num2 = parseFloat(prompt("Número 2: "))
+            resultado = num1 - num2
+            document.write("Resultado da subtração: "+ resultado)
+            i++
+        }else if(operacao == "*"){
+            num2 = parseFloat(prompt("Número 2: "))
+            resultado = num1 * num2
+            document.write("Resultado da multiplicação: "+ resultado)
+            i++
+        }else if(operacao == "/"){
+            num2 = parseFloat(prompt("Número 2: "))
+            resultado = num1 / num2
+            document.write("Resultado da divisão: "+ resultado)
+            i++
+        }else{
+            alert("Insira uma operação válida...")
+        }
+   }
+</script>

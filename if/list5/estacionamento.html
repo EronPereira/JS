@@ -1,0 +1,31 @@
+<script>
+    var hora_in = parseInt(prompt("Hora de entrada:"))
+    var min_in = parseInt(prompt("Min de entrada:"))
+    var hora_out = parseInt(prompt("Hora de saida"))
+    var min_out = parseInt(prompt("Min de saida:"))
+    var horaTotal = 0, minTotal = 0, valor = 0
+    if(hora_in > hora_out){
+        horaTotal = (24 - hora_in) + hora_out
+    }else{
+        horaTotal = hora_out - hora_in 
+    }
+    if(min_in > min_out){
+        minTotal = (60 - min_in) + min_out
+    }else{
+        minTotal = min_out - min_in
+    }
+    if(horaTotal == 0 && minTotal > 0){
+        valor = 4
+    }else if(horaTotal == 0 && minTotal == 0){
+
+    }else if(horaTotal == 1 && minTotal > 0){
+        valor = 6
+    }else if(horaTotal == 1 && minTotal == 0){
+        valor = 6
+    }else if(horaTotal > 1 && minTotal == 0){
+        valor = 6 + (horaTotal - 1)
+    }else{
+        valor = 7 + (horaTotal - 1)
+    }
+    document.write("O valor será: R$" + valor)
+</script>

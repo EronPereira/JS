@@ -1,0 +1,24 @@
+<script>
+    var fuel = parseInt(prompt("1 para Alcool ou 2 para Gasolina"))
+    var valor = 0, qtd = parseInt(prompt("Quantos litros?"))
+    switch(fuel){
+        case (fuel == 1 && qtd <= 20):
+            valor = ((4.73*0.03) - 4.73) * qtd
+            document.write("Total de: R$" + valor)
+            break
+        case (fuel == 1 && qtd > 20):
+            valor = ((4.73*0.05) - 4.73) * qtd
+            document.write("Total de: R$" + valor)
+            break;
+        case(fuel == 2 && qtd <= 20):
+            valor = ((5.45*0.04) - 5.45) * qtd
+            document.write("Total de: R$" + valor)
+            break;
+        case(fuel == 2 && qtd > 20):
+            valor = ((5.45*0.06) - 5.45) * qtd
+            document.write("Total de: R$" + valor)
+            break;
+        default:
+            document.write("combustivel invalido")
+    }
+<script/>

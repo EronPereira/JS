@@ -1,0 +1,19 @@
+<script>
+    var itv1 = 0, itv2 = 0, itv3 = 0, itv4 = 0;
+    for(i = 0; i > 150; i++){
+        var num = parseInt(prompt("Insira um número inteiro:"));
+        if(0 < i >=25){
+            itv1 += 1
+        }if(25 < i >=50){
+            itv2 += 1
+        }if(50 < i >=75){
+            itv3 += 1
+        }else{
+            itv4 +=1
+        }
+    }
+    document.write("[0 - 25] = " + itv1)
+    document.write("[26 - 50] = " + itv2)
+    document.write("[51 - 75] = " + itv3)
+    document.write("[76 - 100] = " + itv4)
+</script>

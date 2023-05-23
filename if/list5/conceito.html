@@ -1,0 +1,19 @@
+<script>
+    var nota1 = parseFloat(prompt("1º nota:"))
+    var nota2 = parseFloat(prompt("2º nota:"))
+    var media = (nota1 + nota2) / 2
+    switch(media){
+        case (media <= 8.9 && media >= 7):
+            document.write("B")
+            break
+        case (media <= 6.9 && media >= 5):
+            document.write("C")
+            break
+        case (media < 5):
+            document.write("D")
+            break
+        default:
+            document.write("A")
+    }
+
+</script>

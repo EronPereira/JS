@@ -1,0 +1,12 @@
+<script>
+    var salario = parseFloat(prompt("Salário do funcionario:"))
+    if(salario <= 1212){
+        document.write("Isento<br>Salario de: R$" + salario)
+    }else if(salario > 1212 && salario <= 1700){
+        document.write("Desconto 5% <br>Salario de: R$" + (salario - (salario*0.05 )))
+    }else if(salario > 1700 && salario <= 3500){
+        document.write("Desconto de 10% <br>Salario de: R$" + (salario - (salario*0.10)))
+    }else{
+        document.write("Desconto de 20% <br>Salario de: R$" + (salario - (salario * 0.20)))
+    }
+</script>

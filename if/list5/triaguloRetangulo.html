@@ -1,0 +1,25 @@
+<script>
+    var lados = [], hip = 0, cats = 0
+    for(i = 0; i < 3; i++){
+        lados [i] = parseFloat(prompt("Digite um lado do triangulo:"))
+    }
+    if(lados[0] > lados[1] && lados[0] > lados[2]){
+        hip = lados[0]**2
+        cats = lados[1]**2 + lados[2]**2
+    }else if(lados[1] > lados[1] && lados[1] > lados[2]){
+        hip = lados[1]**2
+        cats = lados[0]**2 + lados[2]**2
+
+    }else{
+        hip = lados[2]**2
+        cats = lados[1]**2 + lados[0]**2
+
+    }
+    if(hip == cats){
+        document.write("O triângulo é retangulo")
+    }else{
+        document.write("O triângulo não é retangulo")
+
+    }
+    
+</script>

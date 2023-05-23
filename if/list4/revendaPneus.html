@@ -1,0 +1,15 @@
+<script>
+    var salario = parseFloat(prompt("Informe o salario:"))
+    var qtd = parseInt(prompt("Quantos pneus foram vendidos?"))
+    if(qtd <= 15){
+        salario *= 0.06
+    }else if(qtd >= 16 && qtd <=25){
+        salario *= 0.09
+    }else if(qtd >= 26 && qtd <= 45){
+        salario *= 0.15
+    }else{
+        salario = salario*0.2 + 300
+    }
+    document.write("O salario no fim do mes sera:" + salario)
+    
+<script/>

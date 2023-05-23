@@ -1,0 +1,14 @@
+<script>
+    var nota = [], soma = 0, media = 0;
+    var qtd = parseInt(prompt("Quantas notas serão calculadas?"))
+    for(i = 0; i < qtd; i++){
+        nota [i] = parseFloat(prompt("Digite a nota:"))
+        soma += nota[i]
+    }
+    media = soma/qtd;
+    for(i = 0; i < qtd; i++){
+        if(nota[i] < media){
+            document.write("A " + (i + 1) + "º nota está abaixo de média")
+        }
+    }
+</script>

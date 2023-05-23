@@ -1,0 +1,29 @@
+<script>
+    var valor = parseFloat(prompt("Valor da compra:"))
+    var desc = 0;
+    if(valor <= 150){
+        document.write("O valor da compra foi: R$" + valor.toFixed(2))
+        desc = valor * 0.03
+        document.write("Desconto de 3%: R$" + desc)
+        valor = valor - desc
+        document.write("Valor final da compra: R$" + valor.toFixed(2))
+    }else if(valor > 150 && valor <= 250){
+        document.write("O valor da compra foi: R$" + valor.toFixed(2))
+        desc = valor * 0.05
+        document.write("Desconto de 5%: R$" + desc)
+        valor = valor - desc
+        document.write("Valor final da compra: R$" + valor.toFixed(2))
+    }else if(valor > 250 && valor <= 350){
+        document.write("O valor da compra foi: R$" + valor.toFixed(2))
+        desc = valor * 0.10
+        document.write("Desconto de 10%: R$" + desc)
+        valor = valor - desc
+        document.write("Valor final da compra: R$" + valor.toFixed(2))
+    }else{
+        document.write("O valor da compra foi: R$" + valor.toFixed(2))
+        desc = valor * 0.15
+        document.write("Desconto de 15%: R$" + desc)
+        valor = valor - desc
+        document.write("Valor final da compra: R$" + valor.toFixed(2))
+    }
+</script>

@@ -1,0 +1,17 @@
+<script>
+    var pedra = 1, papel = 2, tesoura = 3, computador, jogador;
+    for(i = 0; i < 3; i++){
+        document.write("Rodada " + (i + 1) + ": ")
+        computador = Math.floor(Math.random() * 3) + 1;
+        jogador = parseInt(prompt("1 para Pedra\n2 para Papel\n3 para Tesoura"))
+        if(jogador == 1 && computador == 3){
+            document.write("O jogador ganhou<br>")
+        }else if(jogador == 2 && computador == 1){
+            document.write("O jogador ganhou<br>")
+        }else if(jogador == 3 && computador == 2){
+            document.write("O jogador ganhou<br>")
+        }else{
+            document.write("A máquina ganhou<br>")
+        }
+    }
+</script>
